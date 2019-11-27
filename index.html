@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="utf-8">
+<style>
+.bg-black {
+  padding: 100px; 
+  height: 250px;
+  text-align: left;
+}
+.main-big {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+p {
+  color: #000000;
+}
+body {
+  color: #6E6E6E;
+}
+</style>
+  </head>
+  <body id="winsub">
+
+<div id="winsub" class="bg-black">
+<p id="text" class="main-big">TEXT</p>
+</div> 
+
+
+<button type="button" onclick="white()" >White</button>
+<script>
+function white() {
+    var text = document.getElementById("text");         
+    text.style.color = "#000000"; 
+    var bg = document.getElementById("winsub");
+    bg.style.background = "#ffffff";           
+}
+</script>
+
+<button type="button" onclick="dark()" >Dark</button>
+<script>
+function dark() {
+    var text = document.getElementById("text");         
+    text.style.color = "#ffffff"; 
+    var bg = document.getElementById("winsub");
+    bg.style.background = "#000000";           
+}
+</script>
+
+</body>
+</html>
+
