@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
-
-  <head>
-    <meta charset="utf-8">
+<html>
+	<head>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <style>
-.bg-black {
-  padding: 100px; 
-  height: 250px;
-  text-align: left;
-}
-.main-big {
-  text-align: left;
-  font-weight: bold;
-  font-size: 30px;
-}
+	body { 
+	font-family: 'NanumSquare', 
+	sans-serif !important; 
+	}
+	.bg-black {
+	padding: 100px; 
+	height: 250px;
+	text-align: left;
+	}
+	.main-big {
+	text-align: left;
+	font-weight: bold;
+	font-size: 30px;
+	}
 p {
   color: #000000;
 }
@@ -21,15 +28,18 @@ body {
   color: #6E6E6E;
 }
 </style>
-  </head>
-  <body id="winsub">
+</head>
 
+
+	
+	
+<body id="winsub">
+<div class="container">
+	
 <div id="winsub" class="bg-black">
-<p id="text" class="main-big">TEXT</p>
+<p id="text" class="main-big">글자</p>
 </div> 
-
-
-<button type="button" onclick="white()" >White</button>
+<button type="button" class="btn btn-light" onclick="white()" >화이트모드</button>
 <script>
 function white() {
     var text = document.getElementById("text");         
@@ -38,8 +48,7 @@ function white() {
     bg.style.background = "#ffffff";           
 }
 </script>
-
-<button type="button" onclick="dark()" >Dark</button>
+<button type="button" class="btn btn-dark" onclick="dark()" >야간모드</button>
 <script>
 function dark() {
     var text = document.getElementById("text");         
@@ -48,7 +57,6 @@ function dark() {
     bg.style.background = "#000000";           
 }
 </script>
-
+</div>
 </body>
 </html>
-
